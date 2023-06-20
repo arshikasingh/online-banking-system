@@ -1,0 +1,30 @@
+POST http://localhost/home/signup
+Content-Type: application/json
+
+{
+    "firstname": "Aadarsh",
+    "password": "aadarsh$0001",
+    "confirmPassword": "aadarsh$0001",
+    "DOB": "aaaa",
+    # "phno1": 7799624067,
+    "addstr": "some address",
+    "mpin": 7701,
+    # "gender": "Male",
+    "atmpin": 8907,
+    "state": "MP",
+    "city": "Bhopal",
+    "postalcode": 462022,
+    "landmark": "Near Gayatri hospital"
+}
+
+###
+POST http://localhost/home/login
+Content-Type: application/json
+
+{
+    "accountNumber": 1000001,
+    "password": "aadarsh$0001"
+}
+
+###
+GET http://localhost/home/transfer
