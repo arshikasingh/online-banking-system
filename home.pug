@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banking system</title>
+  //-
+  <link rel="stylesheet" type="text/CSS" href="../static/homecss.css">
+  <script src="https://kit.fontawesome.com/07fcf237ab.js" crossorigin="anonymous"></script>
+  base(href="static")
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo-image">
+    </div>
+    <span class="bank-title">ABC BANK</span>
+    <div class="nav-button">
+      if !user
+        a(href="/home/signup") 
+          <button type="submit" id="button1">SignUp</button>
+        a(href="/home/login") 
+          <button type="submit" id="button2">Login</button>
+      else
+        a(href="/home/logout") 
+          <button type="submit" id="button1">LogOut</button>
+    </div>
+  </nav>
+  <br>
+
+  <div id="background-image">
+  </div>
+  <br>
+  if user
+    h1 Hey #{user.firstname}, how can we help you today?
+  <section class="container">
+    <a href="/home/transfer">
+      <div class="box">
+        <div class="box-image box-1"></div>
+        <h2>Transfer</h2>
+        <p>Transfer to another bank account</p>
+      </div>
+    </a>
+    <a href="/home/loan">
+      <div class="box">
+        <div class="box-image box-2"></div>
+        <h2>Loan</h2>
+        <p>Looking for a loan? We got you covered</p>
+      </div>
+    </a>
+    <a href="/home/changeAtmPin">
+      <div class="box">
+        <div class="box-image box-3"></div>
+        <h2>Change ATM PIN</h2>
+        <p>Change your ATM PIN</p>
+      </div>
+    </a>
+  </section>
+  <section class="container">
+    <a href="/home/changeMpin">
+      <div class="box">
+        <div class="box-image box-4"></div>
+        <h2>Change MPIN</h2>
+        <p>Change your MPIN</p>
+      </div>
+    </a>
+    <a href="/home/block">
+      <div class="box">
+        <div class="box-image box-5"></div>
+        <h2>Block account</h2>
+        <p>Block your bank account</p>
+      </div>
+    </a>
+    <a href="/home/customerSupport">
+      <div class="box">
+        <div class="box-image box-6"></div>
+        <h2>Customer Support</h2>
+        <p>Reach out to us for any assistance</p>
+      </div>
+    </a>
+
+  </section>
+  <footer class="footer">
+    <div class="container1">
+      <div class="row">
+        <div class="footer-col">
+          <h4>bank</h4>
+          <ul>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">our services</a></li>
+            <li><a href="#">privacy policy</a></li>
+            <li><a href="#">branches</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">our services</a></li>
+            <li><a href="#">customer care</a></li>
+            <li><a href="#">branches</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <ul>
+              <a href="#" class="b"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <script src="homejs.js"></script>
+</body>
+
+</html>

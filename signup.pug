@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SignUp</title>
+  <link rel="stylesheet" type="text/CSS" href="../static/signupcss.css">
+  <script src="https://kit.fontawesome.com/07fcf237ab.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo-image">
+      <!-- <img src = "logo.PNG"> -->
+    </div>
+    <span class="bank-title">ABC BANK</span>
+  </nav>
+  <form method = "POST">
+    <div class="container">
+      <div class="form">
+        <div class="input-field">
+          <label for="firstname"> Firstname </label>
+          <input type="text" name="firstname" id="firstname" required>
+        </div>
+        <div class="input-field">
+          <label for="middlename"> Middlename </label>
+          <input type="text" name="middlename" id="middlename">
+        </div>
+        <div class="input-field">
+          <label for="lastname"> lastname </label>
+          <input type="text" name="lastname" id="lastname">
+        </div>
+        <div class="input-field">
+          <label for="dob"> Date Of Birth </label>
+          <input type="date" name="DOB" id="dob" required>
+        </div>
+        <div class="input-field">
+          <label for=""> Gender </label>
+          <input type="radio" name="gender" id="male">
+          <br>
+          <label for="male">Male</label>
+
+          <input type="radio" name="gender" id="female">
+          <br>
+          <label for="female">Female</label>
+
+          <input type="radio" name="gender" id="others">
+          <label for="others">Others</label>
+        </div>
+        <div class="input-field">
+          <label for="pwd"> Set MPIN </label>
+          <input type="password" name="mpin" id="pwd" maxlength="4" pattern="\d{4}" required>
+        </div>
+        <div class="input-field">
+          <label for="pwd1"> Set ATMPIN</label>
+          <input type="password" name="atmpin" id="pwd1" maxlength="4" pattern="\d{4}" required>
+        </div>
+        <div class="input-field">
+          <label for="p_no1"> Phone No. </label>
+          <input type="text" name="phno1" id="p_no1" required>
+        </div>
+        <div class="input-field">
+          <label for="p_no2"> Phone No </label>
+          <input type="text" name="phno2" id="p_no2" placeholder="Optional">
+        </div>
+        <div class="input-field">
+          <label for="pwd2"> Create Password </label>
+          <input type="password" name="password" id="pwd2" required>
+        </div>
+        <div class="input-field">
+          <label for="pwd3"> Confirm Password </label>
+          <input type="password" name="confirmPassword" id="pwd3" required>
+        </div>
+        <div class="input-field">
+          <label for="address"> Address </label>
+          <textarea id="address" name="addstr" rows="7" cols="55" required></textarea>
+        </div>
+        <div class="input-field">
+          <label for="state"> State </label>
+          <input type="text" name="state" id="state" required>
+        </div>
+        <div class="input-field">
+          <label for="city"> City </label>
+          <input type="text" name="city" id="city" required>
+        </div>
+        <div class="input-field">
+          <label for="pin"> Postal Code(PIN) </label>
+          <input type="text" name="postalcode" id="pin" required>
+        </div>
+        <div class="input-field">
+          <label for="landmark"> Landmark </label>
+          <input type="text" name="landmark" id="landmark" placeholder="Optional">
+        </div>
+        <div class="input-field terms">
+          <label for="chk" class="check">
+            <input type="checkbox" name="checkbox" id="chk" required>
+            <!-- <span class="checkmark"></span> -->
+          </label>
+          <p>Agreed to terms and conditions</p>
+        </div>
+        <div class="input-field">
+          <input type="submit" name="submit" value="Create Account" class="btn">
+        </div>
+      </div>
+    </div>
+
+  </form>
+  <footer class="footer">
+    <div class="container1">
+      <div class="row">
+        <div class="footer-col">
+          <h4>bank</h4>
+          <ul>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">our services</a></li>
+            <li><a href="#">privacy policy</a></li>
+            <li><a href="#">branches</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">our services</a></li>
+            <li><a href="#">customer care</a></li>
+            <li><a href="#">branches</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <ul>
+              <a href="#" class="b"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+</body>
+
+</html>

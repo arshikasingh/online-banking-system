@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loan</title>
+  <link rel="stylesheet" type="text/CSS" href="../static/loancss.css">
+  <script src="https://kit.fontawesome.com/07fcf237ab.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo-image">
+    </div>
+    <span class="bank-title">ABC BANK</span>
+  </nav>
+  <form method = "POST">
+    <div class="container">
+      <div class="form">
+        <div class="input-field">
+          <label for="loan title">What type of loan are you looking for? :</label>
+          <select name="loantype" id="loan" required>
+            <option value="education">Education loan</option>
+            <option value="car">Car loan</option>
+            <option value="home">Home loan</option>
+            <option value="personal">Personal loan</option>
+
+          </select>
+        </div>
+        <div class="input-field input-field1">
+          <label for="loan1">Is this loan for yourself? :</label>
+          <select name="loanForSelf" id="loan1" required>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+
+          </select>
+        </div>
+        <div class="input-field">
+          <input type="submit" name="submit" value="Apply for Loan" class="btn">
+        </form>
+        </div>
+      </div>
+    </div>
+  </form method = "POST">
+  <footer class="footer">
+    <div class="container1">
+      <div class="row">
+        <div class="footer-col">
+          <h4>bank</h4>
+          <ul>
+            <li><a href="#">about us</a></li>
+            <li><a href="#">our services</a></li>
+            <li><a href="#">privacy policy</a></li>
+            <li><a href="#">branches</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">our services</a></li>
+            <li><a href="#">customer care</a></li>
+            <li><a href="#">branches</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us</h4>
+          <div class="social-links">
+            <ul>
+              <a href="#" class="b"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  //- <script>
+
+  //-   let click = document.querySelector('.click');
+
+  //-   let list = document.querySelector('.list');
+
+  //-   click.addEventListener("click", () => {
+
+  //-     list.classList.toggle('newlist');
+
+  //-   });
+
+  //- </script>
+</body>
+
+</html>
